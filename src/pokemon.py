@@ -42,9 +42,6 @@ def main():
         case _:
             ATTKQ = get_pokemon(ATTK)
 
-    print(DEFQ[1], DEFType.pokemonType)
-    print(ATTKQ[1], ATTKQ[0])
-
     if ATTKQ[0] in SuperEffective:
         print(ATTKQ[1], "'s attack is very effective against", DEFQ[1])
     elif ATTKQ[0] in NotVeryEffective:
